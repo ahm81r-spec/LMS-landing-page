@@ -1,0 +1,251 @@
+@import url("https://googleapis.com");
+
+:root {
+  background-color: white;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: "1280px";
+  min-width: 320px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e5e8eb;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5%;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 2.5%;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.main-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #898a8b;
+  transition: all 0.5s;
+}
+
+.main-nav a:hover::before {
+  width: 100%;
+}
+
+.main-nav button {
+  width: fit-content;
+  height: 40px;
+  min-width: 84px;
+  max-width: 480px;
+  border-radius: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: #125ced;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav button:hover {
+  background-color: #072e7c;
+  transition: 0.5s;
+}
+
+main {
+  display: flex;
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* hero */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: clamp(340px, 42vw, 520px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  z-index: -100;
+  filter: brightness(60%);
+}
+
+.over-hero-img {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: min(560px, calc(100% - 3rem));
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.over-hero-img button {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  height: 48px;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  background-color: #125ced;
+  color: white;
+  border: none;
+}
+
+.over-hero-img button:hover {
+  background-color: #072e7c;
+  transition: 0.5s;
+}
+
+/* Why Choose Edulearn*/
+
+.why-dibiedu {
+  display: grid;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.why-dibiedu-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.material-container {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #cfd6e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.quizzes-container {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #cfd6e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.certificates-container {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #cfd6e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* Courses */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  overflow: hidden;
+}
+
+.course-container img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.courses button {
+  height: 40px;
+  min-width: 84px;
+  max-width: 480px;
+  border-radius: 8px;
+  padding-inline: 16px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+}
+
+.courses button:hover {
+  background-color: #898a8b;
+  transition: 0.5s;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6rem;
+}
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.footer-description {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    a {
+      display: none;
+    }
+  }
+  .why-dibiedu-container,
+  .course-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind</title>
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-lexend">
+    <header class="bg-[#e5e8eb]">
+      <div
+        class="max-w-6xl mx-auto px-5 py-12 flex gap-4 justify-between font-bold"
+      >
+        <img class="me-auto" src="/logo.svg" alt="logo DibiEdu" />
+        <a href="/cssvanilla/index.html" class="hover:text-[#125ced]">Home</a>
+        <a href="#" class="text-[#125ced]">Courses</a>
+      </div>
+    </header>
+    <div class="max-w-6xl mx-auto px-5 py-12">
+      <a href="#" class="text-[#125ced] font-medium inline-block mb-[1.5rem]">
+        ← All courses
+      </a>
+      <div
+        class="font-bold grid gap-10 md:grid-cols-2 items-center bg-[#eef3ff] overflow-hidden rounded-2xl px-10 py-10 mb-[2rem]"
+      >
+        <div class="space-y-5">
+          <p class="uppercase text-[#125ced]">Beginner · 6 lessons</p>
+          <h1 class="text-4xl">Web Development Fundamentals</h1>
+          <p class="font-light text-justify">
+            Learn how the web works and build your first pages with HTML, CSS,
+            and JavaScript. No previous experience required.
+          </p>
+          <button class="btn-primary">Explore the lessons</button>
+        </div>
+        <img
+          src="/html.jpg"
+          alt="Web Development Fundamentals Poster"
+          class="rounded-xl"
+        />
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="pl-[1.35rem]">
+          <h2 class="font-bold text-xl leading-[1.35]">What you'll learn</h2>
+          <ul class="grid leading-[1.6] list-disc text-[#125ced]">
+            <li>
+              <span class="text-black">
+                Structure accessible pages with semantic HTML.
+              </span>
+            </li>
+            <li>
+              <span class="text-black">
+                Style content using CSS layouts and responsive techniques.
+              </span>
+            </li>
+            <li>
+              <span class="text-black">
+                Add simple interactions with JavaScript.
+              </span>
+            </li>
+            <li>
+              <span class="text-black">
+                Bring it all together in a small website project.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-1 border-[#dbe2ee] font-bold rounded-xl text-[0.9rem] max-w-sm px-5 py-5"
+        >
+          <h2 class="text-[1.4rem]">Course overview</h2>
+          <p
+            class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+          >
+            Level<span class="font-medium text-right">Beginner</span>
+          </p>
+          <p
+            class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+          >
+            Lessons<span class="font-medium text-right">6 lessons</span>
+          </p>
+          <p
+            class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+          >
+            Study time<span class="font-medium text-right">About 3 hours</span>
+          </p>
+          <p
+            class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+          >
+            Format<span class="font-medium text-right"
+              >Learn at your own pace</span
+            >
+          </p>
+          <button class="btn-primary mt-[1rem]">Start learning</button>
+        </div>
+        <div class="text-[1rem]">
+          <h2 class="font-bold text-[1.4rem]">Course curriculum</h2>
+          <ul class="border-1 border-[#dbe2ee] rounded-lg px-4 py-2">
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">Getting started on the web</p>
+              <span>12 min</span>
+            </li>
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">HTML structure and content</p>
+              <span>24 min</span>
+            </li>
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">CSS selectors and styling</p>
+              <span>30 min</span>
+            </li>
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">Layouts with Flexbox and Grid</p>
+              <span>32 min</span>
+            </li>
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">JavaScript essentials</p>
+              <span>28 min</span>
+            </li>
+            <li
+              class="flex justify-between border-b-1 gap-[1rem] py-[0.85rem] border-[#e5e7eb]"
+            >
+              <p class="font-bold">Build and review a mini site</p>
+              <span>35 min</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#e5e8eb]">
+      <div class="max-w-6xl mx-auto px-5 py-3 flex gap-4 justify-center">
+        <p>© 2026 DibiEdu. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
