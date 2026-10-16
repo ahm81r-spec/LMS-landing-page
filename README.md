@@ -36,6 +36,7 @@ Mobile
 ![Web Fundamental Courses Page in Mobile](<courses page smartphone.PNG>)
 
 Tablet
+
 ![Web Fundamental Courses Page in Tablet](<courses page tablet.PNG>)
 
 ## Licenses
