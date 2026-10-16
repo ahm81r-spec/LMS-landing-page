@@ -41,4 +41,4 @@ Tablet
 
 ## Licenses
 
-Some image used are copyright free image from pexels.com
+Some images used are copyright free images from pexels.com
